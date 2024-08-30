@@ -3,11 +3,13 @@ import { useState, useRef } from "react";
 export default function Player() {
   const inputRef = useRef();
 
+  console.log("Ref:", inputRef);
+
   const [playerName, setPlayerName] = useState(null);
 
   function handleClick() {
     setPlayerName(inputRef.current.value);
-    inputRef.current.value = '';
+    inputRef.current.value = "";
   }
 
   return (
@@ -26,12 +28,6 @@ export default function Player() {
     </section>
   );
 }
-
-
-
-
-
-
 
 
 
