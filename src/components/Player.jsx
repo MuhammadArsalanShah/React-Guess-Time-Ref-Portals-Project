@@ -7,6 +7,7 @@ export default function Player() {
 
   function handleClick() {
     setPlayerName(inputRef.current.value);
+    inputRef.current.value = '';
   }
 
   return (
@@ -25,3 +26,53 @@ export default function Player() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Coding Exercise 21 *****/
+/*
+import React from 'react';
+
+function App() {
+    
+    const inputFile = React.useRef();
+    
+    function handleClick () {
+        inputFile.current.click();
+    }
+    
+    return (
+    <div id="app">
+      <p>Please select an image</p>
+      <p>
+        <input ref={inputFile} data-testid="file-picker" type="file" accept="image/*" />
+        <button onClick={handleClick}>Pick Image</button>
+      </p>
+    </div>
+    );
+}
+
+export default App;
+*/
