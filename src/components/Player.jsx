@@ -1,25 +1,25 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Player() {
-  const [playerName, setPlayerName] = useState('');
-  const [submit, setSubmit] = useState(false);
+  const inputRef = useRef();
 
-  console.log('plyer name: ',playerName);
-
-  function handleChange(event) {
-    setSubmit(false)
-    setPlayerName(event.target.value);
-  }
+  const [playerName, setPlayerName] = useState(null);
 
   function handleClick() {
-    setSubmit(true);
+    setPlayerName(inputRef.current.value);
   }
 
   return (
     <section id="player">
-      <h2>Welcome {submit ? playerName : 'unknown entity'}</h2>
+      {/* 
+        Ternaray operator has even shorter syntax. 
+        *** playerName ? playerName : "unknown entity" *** 
+        This code can be writter as
+        *** playerName ?? "unknown entity" *** 
+      */}
+      <h2>Welcome {playerName ?? "unknown entity"}</h2>
       <p>
-        <input type="text" value={playerName} onChange={handleChange} />
+        <input ref={inputRef} type="text" />
         <button onClick={handleClick}>Set Name</button>
       </p>
     </section>
