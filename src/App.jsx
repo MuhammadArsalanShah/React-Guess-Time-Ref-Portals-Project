@@ -16,3 +16,7 @@ function App() {
 }
 
 export default App;
+
+
+
+/*** Coding exercise 22: Managing other values completed. code is on Udemy's exercise block ***/
