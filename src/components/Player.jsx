@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 export default function Player() {
   const inputRef = useRef();
 
-  console.log("Ref:", inputRef);
+  // console.log("Ref:", inputRef);
 
   const [playerName, setPlayerName] = useState(null);
 
