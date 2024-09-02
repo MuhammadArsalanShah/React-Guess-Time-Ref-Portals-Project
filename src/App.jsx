@@ -24,3 +24,6 @@ export default App;
 /*** Coding exercise 23: Forwarding refs. code is on Udemy's exercise block ***/
 
 /*** Coding exercise 24: Exposing component APIs. code is on Udemy's exercise block ***/
+
+/*** Coding exercise 25: Working with portals. code is on Udemy's exercise block ***/
+
