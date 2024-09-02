@@ -17,7 +17,7 @@ export default function Player() {
       {/* 
         Ternaray operator has even shorter syntax. 
         *** playerName ? playerName : "unknown entity" *** 
-        This code can be writter as
+        This code can be written as
         *** playerName ?? "unknown entity" *** 
       */}
       <h2>Welcome {playerName ?? "unknown entity"}</h2>
